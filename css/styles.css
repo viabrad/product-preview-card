@@ -1,0 +1,153 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  width: 100vw;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 14px;    
+    color: hsl(228, 12%, 48%);
+    margin: 0;    
+}
+
+button {
+  font-family: 'Montserrat';
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  border-style: none; 
+  color: white;
+  text-align: center;
+  font-size: 14px;  
+  width: 200%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%)
+}
+
+h1 {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+   
+}
+
+h2 {
+  font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.full-height {
+  height: 100%
+}
+
+.flex-container {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+}
+
+.card {
+  width: 37.5rem;
+  height: 28.125rem;
+  background-color: white;
+  display: flex;
+  border-radius: 15px;  
+}
+
+.perfume-bottle {
+  object-fit: cover;
+  border-radius: 15px 0 0 15px ;
+}
+
+.half-card {
+  width: 50%;
+  height: 100%;
+}
+
+.text-description {
+  padding: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  
+}
+
+.product-description {
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: -15px;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  width: 100%;  
+}
+
+.old-price {
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart {
+  margin-right: 10px;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  div button {    
+    font-size: 14px;
+    padding: 5px;
+    
+  }
+  .card {
+    flex-direction: column;
+    width: 375px;
+    height: 812px;
+  }
+
+  .half-card {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .product-type {
+    text-align: left;
+  }
+
+}
