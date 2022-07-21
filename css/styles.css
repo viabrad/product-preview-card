@@ -7,6 +7,9 @@ body {
   background-color: hsl(30, 38%, 92%);
   height: 100vh;
   width: 100vw;
+  font-family: 'Comfortaa', sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -23,7 +26,7 @@ button {
   border-style: none; 
   color: white;
   text-align: center;
-  font-size: 14px;  
+  font-size: 0.875rem;  
   width: 200%;
   margin-top: 10px;
 }
@@ -35,7 +38,7 @@ button:hover {
 h1 {
     font-family: 'Fraunces';
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     margin: 0;
    
 }
@@ -45,9 +48,9 @@ h2 {
     font-weight: 700;
 }
 
-.full-height {
+/* .full-height {
   height: 100%
-}
+} */
 
 .flex-container {  
   display: flex;
@@ -75,7 +78,7 @@ h2 {
 }
 
 .text-description {
-  padding: 35px;
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -85,7 +88,7 @@ h2 {
 .product-description {
   font-weight: 500;
   line-height: 150%;
-  margin-bottom: -15px;
+  padding-bottom: -15px;
 }
 
 .pricing {
@@ -129,6 +132,8 @@ h2 {
 
 
 @media only screen and (max-width: 600px) {
+
+  
   div button {    
     font-size: 14px;
     padding: 5px;
@@ -137,7 +142,8 @@ h2 {
   .card {
     flex-direction: column;
     width: 375px;
-    height: 812px;
+    height: 90%;
+    
   }
 
   .half-card {
@@ -148,6 +154,11 @@ h2 {
 
   .product-type {
     text-align: left;
+    
+  }
+
+  .perfume-bottle {
+    object-fit: cover;    
   }
 
 }
